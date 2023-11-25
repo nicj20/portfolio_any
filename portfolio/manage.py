@@ -20,3 +20,5 @@ def main():
 """py portfolio\manage.py runserver"""
 if __name__ == '__main__':
     main()
+
+ #/home/nicolecardenasji2028/portfolio_any/portfolio_any/portfolio/main/templates/partials/messages.html
