@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-2t4-5m1z9s2@vtn#esg^ih9_w1v2)zv#-xa26be8g=ee^#1@)&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://nicole-cardenas-portfolio.onrender.com']
 
 
 # Application definition
@@ -91,9 +91,9 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 #         'NAME': 'nicole_portfolio',
-#         'USER': 'djangouser',
+#         'USER': 'nicole',
 #         'PASSWORD': '7RREim11PGXx6x67SqLdwBSRsFPNJGD5',
-#         'HOST': 'dpg-clhdcteg1b2c73ae2j8g-a',
+#         'HOST': 'dpg-clhdcteg1b2c73ae2j8g-a.oregon-postgres.render.com',
 #         'PORT': '5432',
 #     }
 # }
