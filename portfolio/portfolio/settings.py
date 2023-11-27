@@ -91,22 +91,22 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 #         conn_max_age=600
 #     )
 # }
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'nicole_portfolio',
-        'USER': 'nicole',
-        'PASSWORD': '7RREim11PGXx6x67SqLdwBSRsFPNJGD5',
-        'HOST': 'dpg-clhdcteg1b2c73ae2j8g-a.oregon-postgres.render.com',
-        'PORT': '5432',
-    }
-}
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'nicole_portfolio',
+#         'USER': 'nicole',
+#         'PASSWORD': '7RREim11PGXx6x67SqLdwBSRsFPNJGD5',
+#         'HOST': 'dpg-clhdcteg1b2c73ae2j8g-a.oregon-postgres.render.com',
+#         'PORT': '5432',
 #     }
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation
