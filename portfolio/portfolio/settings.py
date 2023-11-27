@@ -19,7 +19,10 @@ import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+ADMINS = (
+    # ('Your Name', 'your_email@domain.com'),
+    ('Nicole', 'nicolcardenas2028@gmail.com'),
+)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -30,6 +33,7 @@ SECRET_KEY = 'django-insecure-2t4-5m1z9s2@vtn#esg^ih9_w1v2)zv#-xa26be8g=ee^#1@)&
 DEBUG = True
 
 ALLOWED_HOSTS = ['nicole-cardenas-portfolio.onrender.com']
+# ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -87,22 +91,22 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 #         conn_max_age=600
 #     )
 # }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'nicole_portfolio',
-#         'USER': 'nicole',
-#         'PASSWORD': '7RREim11PGXx6x67SqLdwBSRsFPNJGD5',
-#         'HOST': 'dpg-clhdcteg1b2c73ae2j8g-a.oregon-postgres.render.com',
-#         'PORT': '5432',
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'nicole_portfolio',
+        'USER': 'nicole',
+        'PASSWORD': '7RREim11PGXx6x67SqLdwBSRsFPNJGD5',
+        'HOST': 'dpg-clhdcteg1b2c73ae2j8g-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Password validation
