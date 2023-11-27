@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 import os
 # import django_heroku
-# import dj_database_url
+import dj_database_url
 # from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -80,7 +80,23 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         # Feel free to alter this value to suit your needs.
+#         default='postgres://nicole:7RREim11PGXx6x67SqLdwBSRsFPNJGD5@dpg-clhdcteg1b2c73ae2j8g-a/nicole_portfolio',
+#         conn_max_age=600
+#     )
+# }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'nicole_portfolio',
+#         'USER': 'djangouser',
+#         'PASSWORD': '7RREim11PGXx6x67SqLdwBSRsFPNJGD5',
+#         'HOST': 'dpg-clhdcteg1b2c73ae2j8g-a',
+#         'PORT': '5432',
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
